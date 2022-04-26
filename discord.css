@@ -29,9 +29,9 @@
   height: 100vh;
   display: grid;
   grid-template:
-    "leftAsideServers serverName channelHeader channelHeader" 50px
-    "leftAsideServers serverChannels mainChat rightAsideUsers" 1fr
-    "leftAsideServers userProfile chatBox rightAsideUsers" 50px / 70px 240px minmax(
+    'leftAsideServers serverName channelHeader channelHeader' 50px
+    'leftAsideServers serverChannels mainChat rightAsideUsers' 1fr
+    'leftAsideServers userProfile chatBox rightAsideUsers' 50px / 70px 240px minmax(
       300px,
       1fr
     )
@@ -205,9 +205,14 @@
 .chat-message {
   display: grid;
   line-height: 2;
-  place-items: center center;
+  place-items: start center;
   grid-template-columns: 50px 1fr;
   color: rgb(214, 215, 217);
+  padding-top: 10px;
+}
+
+.chat-message .icon {
+  margin-top: 10px;
 }
 
 .chatBox {
