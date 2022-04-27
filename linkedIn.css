@@ -28,7 +28,6 @@ nav {
 
 nav ul {
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
   gap: 20px;
 }
@@ -84,6 +83,22 @@ nav span {
 .userProfile {
   background-color: rgb(29, 34, 38);
   height: 370px;
+}
+
+.profile-image {
+  height: 180px;
+  background-color: transparent;
+}
+
+.info-list {
+  background-color: transparent;
+  list-style-type: none;
+}
+
+.info-list li {
+  height: 70px;
+  background-color: transparent;
+  border-top: 1px solid rgb(56, 61, 64);
 }
 
 .userCompany {
