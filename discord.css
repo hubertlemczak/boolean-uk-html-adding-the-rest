@@ -178,13 +178,12 @@
 }
 
 .mainChat {
-  display: grid;
+  display: flex;
+  flex-direction: column-reverse;
   grid-area: mainChat;
-  place-items: left;
   background-color: rgb(54, 57, 63);
   overflow: scroll;
-  padding: 0 0px;
-  gap: 20px;
+  padding: 0px 10px 20px 10px;
 }
 
 .mainChat::-webkit-scrollbar:horizontal {
@@ -194,7 +193,6 @@
 .chat-message {
   display: grid;
   line-height: 2;
-  place-items: start center;
   grid-template-columns: 50px 1fr;
   color: rgb(214, 215, 217);
   padding-top: 10px;
